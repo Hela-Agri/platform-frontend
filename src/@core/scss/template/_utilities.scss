@@ -1,0 +1,43 @@
+.v-timeline-item {
+  .app-timeline-title {
+    color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3125rem;
+  }
+
+  .app-timeline-meta {
+    color: rgba(var(--v-theme-on-surface), var(--v-disabled-opacity));
+    font-size: 11px;
+    line-height: 0.875rem;
+  }
+
+  .app-timeline-text {
+    color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
+    font-size: 13px;
+    line-height: 1.25rem;
+  }
+}
+
+// ℹ️ Temporary solution as v-spacer style is not getting applied in build version. will remove this after release.
+// VSpacer
+.v-spacer {
+  flex-grow: 1;
+}
+
+.app-logo-title {
+  width: 100px;
+  height: 100px;
+  background-image: url('../../../assets/images/helaAgri.jpeg');
+  background-size: contain; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image in the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.text-white-variant {
+  color: rgba(255, 255, 255, 78%) !important;
+}
+
+.bg-custom-background {
+  background-color: rgb(var(--v-table-header-color));
+}
